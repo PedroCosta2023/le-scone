@@ -1,57 +1,82 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #EDECE4;
     border: 10px solid #CBC6B9;
 }
 
-main{
+main {
     display: flex;
     justify-content: space-between;
-    width: 1200px;
-    height: 876px;
+    width: 1000px;
+    height: 800px;
+    margin-top: 77px;
 }
 
-span{
+span {
     display: flex;
     align-items: center;
     gap: 30px;
 }
 
-.paragraph{
+.textDay {
     font-size: 18px;
     color: black;
 }
 
-.makerGreen{
+.markerGreen {
     width: 12px;
     height: 12px;
     border-radius: 12px;
-    background-color: #1AB912;
+    background-color: green;
 }
 
-.textHours{
+.textHours {
     width: 318px;
     height: 82px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    margin-top: 60px;
+    justify-content: center;
     border-bottom: 2px solid black;
     border-right: 2px solid black;
-    
 }
 
-.textLocation{
+.textLocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 318px;
     height: 82px;
     border-right: 2px solid black;
+}
+
+.textDecoration {
+    color: #988C77;
+    font-size: 18px;
+}
+
+.textWrapper {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    gap: 30px;
+}
+
+.textWrapper > img {
+    width: 200px;
+    height: 200px;
+}
+
+.textWrapper > h1 {
+    font-size: 200px;
+}
+
+main > img {
+    width: 600px;
+    height: 700px;
 }
