@@ -140,7 +140,6 @@ menu {
     justify-content: space-between;
     height: 300px;
     width: 100%;
-    margin-left: 60px;
 }
 
 menu>img {
@@ -158,11 +157,6 @@ img:hover {
 
 .contact {
     display: flex;
-    /* align-items: flex-start;
-    justify-content: space-around;
-    height: 300px;
-    gap: 100px;
-    margin-left: 60px; */
     flex-direction: column;
 }
 
@@ -246,7 +240,7 @@ footer{
 @media (max-width: 520px){
 
     body{
-
+        gap: 80px;
     }
 
     main{
@@ -267,5 +261,43 @@ footer{
 
     .hero-wrapper > :nth-child(4){
         font-size: 100px;
+    }
+
+    section{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    menu > img{
+        display: none;
+    }
+
+    menu{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .input{
+        width: 90%;
+        padding: 15px;
+    }
+
+    form :nth-child(3){
+        flex-direction: column;
+    }
+
+    map{
+        align-self: center; 
+    }
+
+    footer > img{
+        display: none;
     }
 }
